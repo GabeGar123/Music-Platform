@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Platform</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="box">
+        <h1 id="title">Gabe Music Platform</h1>
+    </header>
+
+    <div id="description" class="box">
+        <p>Please use the selector below to determine the song recommendation. Once selected, press the submit button to generate the video.</p>
+    </div>
+
+
+        <form action="index.php" method="post" id="selector" class="box">
+            <select name="country" id="country">
+                <option value="Mexico">Mexico</option>
+                <option value="USA">USA</option>
+                <option value="England">England</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+            </select>
+
+            <select name="type" id="type">
+                <option value="music-video">Music Video</option>
+                <option value="Live">Live</option>
+                <option value="Instrumental">Instrumental</option>
+                <option value="Remix">Remix</option>
+                <option value="Slowed">Slowed</option>
+            </select>
+
+            <select name="genre" id="genre">
+                <option value="Pop">Pop</option>
+                <option value="Rap">Rap</option>
+                <option value="Country">Country</option>
+                <option value="Indie">Indie</option>
+                <option value="RnB">R&B</option>
+            </select>
+
+
+            <button type="button" id="submit" onclick="submitClicked()">Submit</button>
+        </form>
+
+        <div id="video-display">
+            <div id="player">
+                
+            </div>
+        </div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
